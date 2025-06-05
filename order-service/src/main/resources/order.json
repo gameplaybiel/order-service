@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "clientId": 1,
+    "status": "PENDING"
+  },
+  {
+    "id": 2,
+    "clientId": 2,
+    "status": "WAITING_FOR_PAYMENT"
+  },
+  {
+    "id": 3,
+    "clientId": 3,
+    "status": "PAID"
+  },
+  {
+    "id": 4,
+    "clientId": 4,
+    "status": "SHIPPED"
+  }
+]

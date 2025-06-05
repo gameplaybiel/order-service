@@ -1,0 +1,24 @@
+services:
+  rabbitmq_2:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_3
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASSWORD: guest
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: gabriel18
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8083:8080"
